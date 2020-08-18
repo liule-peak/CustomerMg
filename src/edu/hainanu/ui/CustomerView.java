@@ -15,7 +15,7 @@ public class CustomerView {
     private CustomerList customerList = new CustomerList(10);
 
     public CustomerView() {
-        Customer customer = new Customer("liule", '男', 23, "13213452345", "liule@gmail.com");
+        Customer customer = new Customer("刘乐", '男', 23, "13213452345", "liule@gmail.com");
         customerList.addCustomer(customer);
     }
 
@@ -161,7 +161,7 @@ public class CustomerView {
         if (total < 0) {
             System.out.println("没有客户记录");
         } else {
-            System.out.println("编号\t姓名\t性别\t年龄\t电话\t邮箱");
+            System.out.println("编号"+"\t"+"姓名"+"\t"+"性别"+"\t"+"年龄"+"\t"+"电话        "+"\t"+"邮箱");
             Customer[] custs = customerList.getAllCustomers();
             for (int i = 0; i < total; i++) {
                 Customer cust = custs[i];
